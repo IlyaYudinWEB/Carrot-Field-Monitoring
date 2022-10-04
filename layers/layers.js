@@ -103,13 +103,13 @@ var lyr_20220801S2_7 = new ol.layer.Image({
                                 imageExtent: [5811114.785616, 7509143.256952, 5813165.048256, 7512558.245499]
                             })
                         });
-var lyr_NDVI_01082022_2_8 = new ol.layer.Image({
+var lyr_NDVI_01082022_S2_8 = new ol.layer.Image({
                             opacity: 1,
-                            title: "NDVI_01082022_2",
+                            title: "NDVI_01082022_S2",
                             
                             
                             source: new ol.source.ImageStatic({
-                               url: "./layers/NDVI_01082022_2_8.png",
+                               url: "./layers/NDVI_01082022_S2_8.png",
     attributions: ' ',
                                 projection: 'EPSG:3857',
                                 alwaysInRange: true,
@@ -165,29 +165,55 @@ var lyr_NDVI_31082022_S2_12 = new ol.layer.Image({
     attributions: ' ',
                                 projection: 'EPSG:3857',
                                 alwaysInRange: true,
-                                imageExtent: [5811774.870195, 7510104.043127, 5812805.002174, 7511508.270139]
+                                imageExtent: [5811774.870242, 7510104.043154, 5812805.002219, 7511508.270150]
                             })
                         });
-var format_Final_Field_bound_13 = new ol.format.GeoJSON();
-var features_Final_Field_bound_13 = format_Final_Field_bound_13.readFeatures(json_Final_Field_bound_13, 
+var lyr_20221003S2_13 = new ol.layer.Image({
+                            opacity: 1,
+                            title: "2022-10-03 S2",
+                            
+                            
+                            source: new ol.source.ImageStatic({
+                               url: "./layers/20221003S2_13.png",
+    attributions: ' ',
+                                projection: 'EPSG:3857',
+                                alwaysInRange: true,
+                                imageExtent: [5811114.785616, 7509143.256952, 5813165.048256, 7512558.245499]
+                            })
+                        });
+var lyr_NDVI_03102022_S2_14 = new ol.layer.Image({
+                            opacity: 1,
+                            title: "NDVI_03102022_S2",
+                            
+                            
+                            source: new ol.source.ImageStatic({
+                               url: "./layers/NDVI_03102022_S2_14.png",
+    attributions: ' ',
+                                projection: 'EPSG:3857',
+                                alwaysInRange: true,
+                                imageExtent: [5811774.870131, 7510103.569754, 5812805.002108, 7511508.687048]
+                            })
+                        });
+var format_Final_Field_bound_15 = new ol.format.GeoJSON();
+var features_Final_Field_bound_15 = format_Final_Field_bound_15.readFeatures(json_Final_Field_bound_15, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_Final_Field_bound_13 = new ol.source.Vector({
+var jsonSource_Final_Field_bound_15 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_Final_Field_bound_13.addFeatures(features_Final_Field_bound_13);
-var lyr_Final_Field_bound_13 = new ol.layer.Vector({
+jsonSource_Final_Field_bound_15.addFeatures(features_Final_Field_bound_15);
+var lyr_Final_Field_bound_15 = new ol.layer.Vector({
                 declutter: true,
-                source:jsonSource_Final_Field_bound_13, 
-                style: style_Final_Field_bound_13,
+                source:jsonSource_Final_Field_bound_15, 
+                style: style_Final_Field_bound_15,
                 interactive: true,
-                title: '<img src="styles/legend/Final_Field_bound_13.png" /> Final_Field_bound'
+                title: '<img src="styles/legend/Final_Field_bound_15.png" /> Final_Field_bound'
             });
 
-lyr_OpenStreetMap_0.setVisible(true);lyr_20210709WV2_1.setVisible(true);lyr_20220428S2_2.setVisible(true);lyr_20220508S2_3.setVisible(true);lyr_20220526S2_4.setVisible(true);lyr_20220625S2_5.setVisible(true);lyr_20220727S2_6.setVisible(true);lyr_20220801S2_7.setVisible(true);lyr_NDVI_01082022_2_8.setVisible(true);lyr_20220806S2_9.setVisible(true);lyr_NDVI_06082022_S2_10.setVisible(true);lyr_20220831S2_11.setVisible(true);lyr_NDVI_31082022_S2_12.setVisible(true);lyr_Final_Field_bound_13.setVisible(true);
-var layersList = [lyr_OpenStreetMap_0,lyr_20210709WV2_1,lyr_20220428S2_2,lyr_20220508S2_3,lyr_20220526S2_4,lyr_20220625S2_5,lyr_20220727S2_6,lyr_20220801S2_7,lyr_NDVI_01082022_2_8,lyr_20220806S2_9,lyr_NDVI_06082022_S2_10,lyr_20220831S2_11,lyr_NDVI_31082022_S2_12,lyr_Final_Field_bound_13];
-lyr_Final_Field_bound_13.set('fieldAliases', {'id': 'id', 'Area': 'Area', 'area_1': 'area_1', 'Площа': 'Площа', });
-lyr_Final_Field_bound_13.set('fieldImages', {'id': 'TextEdit', 'Area': '', 'area_1': '', 'Площа': '', });
-lyr_Final_Field_bound_13.set('fieldLabels', {'id': 'no label', 'Area': 'no label', 'area_1': 'no label', 'Площа': 'inline label', });
-lyr_Final_Field_bound_13.on('precompose', function(evt) {
+lyr_OpenStreetMap_0.setVisible(true);lyr_20210709WV2_1.setVisible(true);lyr_20220428S2_2.setVisible(true);lyr_20220508S2_3.setVisible(true);lyr_20220526S2_4.setVisible(true);lyr_20220625S2_5.setVisible(true);lyr_20220727S2_6.setVisible(true);lyr_20220801S2_7.setVisible(true);lyr_NDVI_01082022_S2_8.setVisible(true);lyr_20220806S2_9.setVisible(true);lyr_NDVI_06082022_S2_10.setVisible(true);lyr_20220831S2_11.setVisible(true);lyr_NDVI_31082022_S2_12.setVisible(true);lyr_20221003S2_13.setVisible(true);lyr_NDVI_03102022_S2_14.setVisible(true);lyr_Final_Field_bound_15.setVisible(true);
+var layersList = [lyr_OpenStreetMap_0,lyr_20210709WV2_1,lyr_20220428S2_2,lyr_20220508S2_3,lyr_20220526S2_4,lyr_20220625S2_5,lyr_20220727S2_6,lyr_20220801S2_7,lyr_NDVI_01082022_S2_8,lyr_20220806S2_9,lyr_NDVI_06082022_S2_10,lyr_20220831S2_11,lyr_NDVI_31082022_S2_12,lyr_20221003S2_13,lyr_NDVI_03102022_S2_14,lyr_Final_Field_bound_15];
+lyr_Final_Field_bound_15.set('fieldAliases', {'id': 'id', 'Area': 'Area', 'area_1': 'area_1', 'Площа': 'Площа', });
+lyr_Final_Field_bound_15.set('fieldImages', {'id': 'TextEdit', 'Area': '', 'area_1': '', 'Площа': '', });
+lyr_Final_Field_bound_15.set('fieldLabels', {'id': 'no label', 'Area': 'no label', 'area_1': 'no label', 'Площа': 'inline label', });
+lyr_Final_Field_bound_15.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });
